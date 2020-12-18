@@ -1,0 +1,168 @@
+body {
+  color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+p{
+  font-size: 18px;
+  padding: 0 5vw;
+  margin-bottom: 50px;
+}
+/*--- 共通パーツ ---*/
+
+section {
+  padding: 70px 0;
+}
+
+.bg-dkgray {
+  background-color: #666;
+}
+
+.white-box {
+  width: 95vw;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.card-box {
+  display: block;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #f0cf19;
+  transition: ;
+  color: #fff;
+  font-size: 23px;
+}
+
+.btn:hover {
+  background-color: #f0ae19;
+}
+
+/*--- 見出しパーツ ---*/
+
+.h3-box, .h3-box-white {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.h3-box {
+  background-color: #333;
+}
+
+.h3-box-white {
+  background-color: #fff;
+}
+
+.h3-box h3, .h3-box-white h3 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1;
+  padding: 20px;
+}
+
+.h3-box h3 small, .h3-box-white h3 small {
+  font-size: 14px;
+}
+
+.h3-box h3 {
+  color: #fff;
+}
+
+h4 {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 0 5vw;
+  margin: 50px 0;
+  text-align: left;
+}
+
+/*--- トップイメージ ---*/
+
+.top-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, .5);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.top-img h2 {
+  color: #fff;
+}
+
+.home .top-img {
+  height: 30vh;
+  background-image: url(../img/topimg-home.jpg);
+}
+
+.home .top-img h2 {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 10vw;
+}
+
+/*--- ホームのデザイン ---*/
+
+.news-box dt, .news-box dd {
+  padding: 0 2.5vw;
+}
+
+.news-box dt {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.news-date {
+  margin-bottom: 10px;
+  padding: 10px 0;
+  width: 140px;
+  text-align: center;
+  background-color: #d4ae01;
+  color: #fff;
+  font-size: 20px;
+}
+
+.card {
+  margin-top: 120px;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.card a , .btn-w210{
+  width: 210px;
+}
+
+.about-us {
+  background-color: rgba(0, 0, 0, .5);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-image: url(../img/office.jpg);
+}
+.about-us h4, .about-us p{
+  color: #fff;
+}
+.about-us h4{
+  text-align: center;
+}
