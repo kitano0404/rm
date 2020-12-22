@@ -8,107 +8,174 @@
     <title>合同会社 リスクマネジメント</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
 </head>
 
 <body class="home">
     <header>
-        <h1><img src="./img/logo.png" alt="合同会社リスクマネジメント"></h1>
-        <nav>
-            <ul>
-                <li>事業内容
-                    <ul>
-                        <li>省エネ・環境インフラ事業</li>
-                        <li>SIM販売・広告代理店業務</li>
-                        <li>コンサルティング業務</li>
-                        <li>補助金サポート</li>
-                        <li>除菌　抗菌コンサル</li>
-                        <li>ワム　資金調達</li>
+        <div class="container">
+            <h1>
+                <img src="./img/logo.png" alt="合同会社リスクマネジメント">
+            </h1>
+            <div class="drawer">
+                <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+                <label for="navToggle" class="btn-burger">
+                    <span class="icon"></span>
+                </label>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><label for="menu_bar01">事業内容</label>
+                            <input type="checkbox" id="menu_bar01" class="accordion" />
+                            <ul id="links01">
+                                <li><a href="">省エネ・環境インフラ事業</a></li>
+                                <li><a href="">SIM販売・広告代理店業務</a></li>
+                                <li><a href="">コンサルティング業務</a></li>
+                                <li><a href="">補助金サポート</a></li>
+                                <li><a href="">除菌 抗菌コンサル</a></li>
+                                <li><a href="">ワム 資金調達</a></li>
+                            </ul>
+                        </li>
+                        <li><label for="menu_bar02">アコーディオン２</label>
+                            <input type="checkbox" id="menu_bar02" class="accordion" />
+                            <ul id="links02">
+                                <li><a href="">トップメッセージ</a></li>
+                                <li><a href="">会社情報</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-contact"><a href="">お問い合わせ</a></li>
                     </ul>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+            </div>
+        </div>
     </header>
-    <div class="top-img">
-        <h2>キャッチーコピーが入ります。キャッチーコピーが入ります。</h2>
-    </div>
-    <section class="news bg-dkgray">
-        <div class="white-box">
-            <div class="h3-box">
-                <h3>Information<br>
-                    <small>お知らせ</small></h3>
-            </div>
-            <dl class="news-box">
-                <dt>
-                    <div class="news-date">2020.12.30</div>
-                    年末年始の営業時間のお知らせ
-                </dt>
-                <dd>
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                </dd>
-            </dl>
+    <main>
+        <div class="top-img">
+            <h2>キャッチーコピーが入ります。キャッチーコピーが入ります。</h2>
         </div>
-    </section>
-    <section class="services">
-        <div class="h3-box">
-            <h3>Services<br>
-                <small>私たちのサービス</small></h3>
+        <section class="news bg-dkgray">
+            <div class="container">
+                <div class="white-box">
+                    <div class="h3-box">
+                        <h3>Information<br>
+                            <small>お知らせ</small></h3>
+                    </div>
+                    <dl class="news-box">
+                        <dt>
+                            <div class="news-date">2020.12.30</div>
+                            年末年始の営業時間のお知らせ
+                        </dt>
+                        <dd>
+                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="h3-box">
+                    <h3>Services<br>
+                        <small>私たちのサービス</small></h3>
+                </div>
+                <h4>（例文）６つの得意分野を活かし、総合的な観点からお客様のニーズに合ったコンサルティングを実施いたします。</h4>
+                <div class="card-box">
+                    <div class="card">
+                        <img src="./img/shoene-img.jpg" alt="1つ目は省エネ・環境インフラ事業です">
+                        <h5>省エネ・<br>
+                            環境インフラ事業</h5>
+                        <a href="" class="btn">詳しく見る</a>
+                    </div>
+                    <div class="card">
+                        <img src="./img/sim-koukoku-img.jpg" alt="2つ目はSIM販売・広告代理店事業です">
+                        <h5>SIM販売・<br>
+                            広告代理店事業</h5>
+                        <a href="" class="btn">詳しく見る</a>
+                    </div>
+                    <div class="card">
+                        <img src="./img/consulting-img.jpg" alt="3つ目はコンサルティング事業です">
+                        <h5>コンサルティング事業</h5>
+                        <a href="" class="btn">詳しく見る</a>
+                    </div>
+                    <div class="card">
+                        <img src="./img/hojokin-img.jpg" alt="4つ目は補助金サポートです">
+                        <h5>補助金サポート</h5>
+                        <a href="" class="btn">詳しく見る</a>
+                    </div>
+                    <div class="card">
+                        <img src="./img/jokin-img.jpg" alt="5つ目は除菌 抗菌コンサルです">
+                        <h5>除菌 抗菌コンサル</h5>
+                        <a href="" class="btn">詳しく見る</a>
+                    </div>
+                    <div class="card">
+                        <img src="./img/sikintyotatu-img.jpg" alt="１つ目はワム 資金調達です">
+                        <h5>ワム 資金調達</h5>
+                        <a href="" class="btn">詳しく見る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="container"></div>
+            <div class="h3-box-white">
+                <h3>About us<br>
+                    <small>私たちについて</small></h3>
+            </div>
+            <h4 class="h4-center">お客様の想いを何より大切に<br>
+                寄り添い、サポートします</h4>
+            <p class="about-p">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </p>
+            <a href="" class="btn btn-w210">詳しく見る</a>
+        </section>
+        <section class="contact bg-dkgray">
+            <div class="container">
+                <div class="white-box">
+                    <div class="h3-box">
+                        <h3>Contact<br>
+                            <small>お問い合わせ</small></h3>
+                    </div>
+                    <h4>無料相談のお申込み、その他ご質問については、<br>
+                        メールフォームか電話よりお気軽にお問い合わせください。</h4>
+                    <h4 class="uketukejikan">9:00〜17:00（土・日・祝日は除く）</h4>
+                    <div class="contact-item">
+                        <div class="contact-card">
+                            <img class="mail-img" src="./img/mail.png" alt="メールフォームからお問い合わせをご希望の方はこちら">
+                            <h5>メールフォーム</h5>
+                            <a href="" class="btn btn-w275">お問い合わせは<br>
+                                こちらから</a>
+                        </div>
+                        <div class="contact-card">
+                            <img class="phone-img" src="./img/phone.png" alt="電話からお問い合わせをご希望の方はこちら">
+                            <h5>電話</h5>
+                            <a href="" class="btn btn-w275 btn-h110">092-724-3614</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-flex">
+                <img class="footer-logo" src="./img/logo-rm.png" alt="RM">
+                <div class="footer-right">
+                    <h5>合同会社リスクマネジメント</h5>
+                    <address>〒810-0022<br>
+                        福岡県福岡市中央区薬院1-16-5-9F<br>
+                        TEL:092-724-3614</address>
+                    <dl class="eigyou-info">
+                        <dt>営業時間</dt>
+                        <dd>9:00〜17:00</dd>
+                    </dl>
+                    <dl class="eigyou-info">
+                        <dt>定休日</dt>
+                        <dd>土曜日、日曜日、祝日</dd>
+                    </dl>
+                </div>
+            </div>
+            <p class="copy-right">&copy;2020 合同会社リスクマネジメント</p>
         </div>
-        <h4>（例文）６つの得意分野を活かし、総合的な観点からお客様のニーズに合ったコンサルティングを実施いたします。</h4>
-        <div class="card-box">
-            <div class="card">
-                <img src="./img/shoene-img.jpg" alt="1つ目は省エネ・環境インフラ事業です">
-                <h4>省エネ・<br>
-                    環境インフラ事業</h4>
-                <a href="" class="btn">詳しく見る</a>
-            </div>
-            <div class="card">
-                <img src="./img/sim-koukoku-img.jpg" alt="2つ目はSIM販売・広告代理店事業です">
-                <h4>SIM販売・<br>
-                    広告代理店事業</h4>
-                <a href="" class="btn">詳しく見る</a>
-            </div>
-            <div class="card">
-                <img src="./img/consulting-img.jpg" alt="3つ目はコンサルティング事業です">
-                <h4>コンサルティング事業</h4>
-                <a href="" class="btn">詳しく見る</a>
-            </div>
-            <div class="card">
-                <img src="./img/hojokin-img.jpg" alt="4つ目は補助金サポートです">
-                <h4>補助金サポート</h4>
-                <a href="" class="btn">詳しく見る</a>
-            </div>
-            <div class="card">
-                <img src="./img/jokin-img.jpg" alt="5つ目は除菌 抗菌コンサルです">
-                <h4>除菌 抗菌コンサル</h4>
-                <a href="" class="btn">詳しく見る</a>
-            </div>
-            <div class="card">
-                <img src="./img/sikintyotatu-img.jpg" alt="１つ目はワム 資金調達です">
-                <h4>ワム 資金調達</h4>
-                <a href="" class="btn">詳しく見る</a>
-            </div>
-        </div>
-    </section>
-    <section class="about-us">
-        <div class="h3-box-white">
-            <h3>About us<br>
-                <small>私たちについて</small></h3>
-        </div>
-        <h4>お客様の想いを何より大切に<br>
-            寄り添い、サポートします</h4>
-        <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-        </p>
-        <a href="" class="btn btn-w210">詳しく見る</a>
-    </section>
-    <section class="contact bg-dkgray">
-        <div class="white-box">
-            <div class="h3-box">
-                <h3>Contact<br>
-                    <small>お問い合わせ</small></h3>
-            </div>
-            <h4>無料相談のお申込み、その他ご質問については、<br>
-            メールフォームか電話よりお気軽にお問い合わせください。</h4>
-            <h4>9:00〜17:00（土・日・祝日は除く）</h4>
-        </div>
-    </section>
+    </footer>
 </body>
+
+</html>

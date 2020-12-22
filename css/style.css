@@ -9,16 +9,27 @@ body {
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
-p{
+
+p {
   font-size: 18px;
   padding: 0 5vw;
   margin-bottom: 50px;
 }
+
+main {
+  padding-top: 75px;
+}
+
 /*--- 共通パーツ ---*/
 
 section {
   padding: 70px 0;
+}
+
+.container {
+  width: 100%;
 }
 
 .bg-dkgray {
@@ -49,6 +60,21 @@ section {
 
 .btn:hover {
   background-color: #f0ae19;
+}
+
+/*--- ヘッダー ---*/
+
+header {
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+  width: 100vw;
+  height: 75px;
+}
+
+header h1 img {
+  width: 65vw;
+  padding: 15px;
 }
 
 /*--- 見出しパーツ ---*/
@@ -89,6 +115,17 @@ h4 {
   text-align: left;
 }
 
+.h4-center {
+  text-align: center;
+}
+
+h5 {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 50px 0;
+  text-align: center;
+}
+
 /*--- トップイメージ ---*/
 
 .top-img {
@@ -118,7 +155,58 @@ h4 {
   padding: 0 10vw;
 }
 
-/*--- ホームのデザイン ---*/
+/*--- フッター ---*/
+
+footer {
+  padding-top: 60px;
+}
+
+.footer-logo {
+  width: 60vw;
+  margin: 0 auto 60px;
+}
+
+.footer-right {
+  padding: 0 10vw;
+}
+
+footer h5 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+address {
+  font-style: normal;
+}
+
+.eigyou-info {
+  display: flex;
+  margin: 5px 0;
+}
+
+.eigyou-info dt {
+  padding: 3px;
+  width: 75px;
+  text-align: center;
+  background-color: #d4ae01;
+  color: #fff;
+}
+
+.eigyou-info dd {
+  margin-left: 5px;
+  padding: 3px;
+}
+
+.copy-right {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/*--- 以下、各ページのデザイン ---*/
+
+/*--- ホーム ---*/
 
 .news-box dt, .news-box dd {
   padding: 0 2.5vw;
@@ -145,11 +233,7 @@ h4 {
   margin-top: 120px;
 }
 
-.card h4 {
-  text-align: center;
-}
-
-.card a , .btn-w210{
+.card a, .btn-w210 {
   width: 210px;
 }
 
@@ -160,9 +244,165 @@ h4 {
   background-blend-mode: multiply;
   background-image: url(../img/office.jpg);
 }
-.about-us h4, .about-us p{
+
+.about-us h4, .about-us p {
   color: #fff;
 }
-.about-us h4{
-  text-align: center;
+
+.uketukejikan {
+  margin-top: -30px;
+}
+
+.contact-item {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.contact-card {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.contact-card img {
+  margin: 0 auto;
+}
+
+.mail-img {
+  width: 60vw;
+}
+
+.phone-img {
+  width: 40vw;
+}
+
+.btn-w275 {
+  width: 275px;
+}
+
+.btn-h110 {
+  padding: 36px 0;
+}
+
+/* --------------------------------------------------
+  幅768px以上のスタイル指定 ここから
+-------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 75px;
+  }
+  /*--- 共通パーツ ---*/
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .white-box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width: 28%;
+    margin-right: 5%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  /*--- ヘッダー ---*/
+  header {
+    width: 100%;
+    height: 75px;
+  }
+  .menu-flex {
+    display: flex;
+  }
+  header h1 img {
+    width: 300px;
+    float: left;
+  }
+  /*--- 見出しパーツ ---*/
+  .h3-box, .h3-box-white {
+    width: 350px;
+  }
+  h4 {
+    text-align: center;
+    margin: 50px auto;
+  }
+  /*--- フッター ---*/
+  .footer-flex {
+    display: flex;
+  }
+  .footer-logo {}
+  .footer-right {
+    padding: 0 10vw;
+  }
+  footer h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  address {
+    font-style: normal;
+  }
+  .eigyou-info {
+    display: flex;
+    margin: 5px 0;
+  }
+  .eigyou-info dt {
+    padding: 3px;
+    width: 75px;
+    text-align: center;
+    background-color: #d4ae01;
+    color: #fff;
+  }
+  .eigyou-info dd {
+    margin-left: 5px;
+    padding: 3px;
+  }
+  .copy-right {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  /*--- トップイメージ ---*/
+  .home .top-img {
+    height: 80vh;
+    background-image: url(../img/topimg-home.jpg);
+  }
+  .home .top-img h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  /*--- 以下、各ページのデザイン ---*/
+  /*--- ホーム ---*/
+  .news-box dt, .news-box dd {
+    padding: 0 100px;
+  }
+  .card h5 {
+    margin: 30px 0;
+    height: 70px;
+  }
+  .about-p {
+    margin: 0 200px 50px;
+  }
+  .contact-item {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contact-card {
+    width: 50%;
+    margin-top: 30px;
+  }
+  .mail-img {
+    width: 200px;
+  }
+  .phone-img {
+    width: 110px;
+  }
 }
