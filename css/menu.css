@@ -1,166 +1,240 @@
-/*ハンバーガーアイコン*/
-
-.btn-burger {
-    cursor: pointer;
-    display: block;
-    width: 56px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    right: 10px;
+header {
+    position: fixed;
+    z-index: 1000;
 }
 
-/*ハンバーガーアイコンを作る三本線*/
-
-.icon, .icon:before, .icon:after {
-    position: absolute;
+#navi {
+    background-color: #FFF;
+    position: fixed;
     top: 0;
-    right: 0;
+    height: 75px;
+    width: 100%;
+}
+
+#navi::after {
+    clear: both;
+}
+
+/* チェックボックスを非表示 */
+
+#navi input {
+    display: none;
+}
+
+/* 左上ロゴ */
+
+.menu-left {
+    float: left;
+}
+
+.menu-left img {
+    padding: 10px 0;
+}
+
+/* 上部メニュー */
+
+#menu {
+    float: right;
+}
+
+#menu li {
+    position: relative;
+    white-space: nowrap;
+    padding: 0 50px;
+}
+
+#menu li a {
+    display: block;
+    font-weight: bold;
+    color: #666;
+}
+
+#menu>li {
+    float: left;
+    line-height: 75px;
+    color: #666;
+    font-weight: bold;
+}
+
+/* パソコンでは V を非表示 */
+
+#menu>li .pd {
+    display: none;
+}
+
+#menu-navibtn {
+    display: none;
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* スマホ用 */
+
+@media screen and (max-width: 767px) {
+    /* 左上ロゴ */
+    .menu-left {
+        float: left;
+    }
+    .menu-left img {
+        padding: 15px 5px;
+        width: 75vw;
+    }
+    /* 基本非表示 */
+    #menu {
+        display: none;
+        float: none;
+    }
+    #menu li {
+        height: auto;
+        width: 100%;
+        white-space: nowrap;
+        padding-left: 20px;
+    }
+    /* V を表示 */
+    #menu>li .pd {
+        display: inline-block;
+        width: 100%;
+    }
+    #menu li a {
+        display: inline-block;
+    }
+    #menu li i {
+        padding: 0px 6px;
+    }
+    /* メニューを移動させないため */
+    #menu-navibtn:checked~#navi {
+        position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%;
+    }
+}
+
+/* ドロップダウンメニュー */
+
+#menu li ul {
+    position: absolute;
     left: 0;
-    bottom: 0;
-    height: 2px;
-    /*線の太さ*/
-    width: 35px;
-    /*線の長さ*/
-    background-color: #444;
-    border-radius: 2px;
-    display: block;
-    content: '';
-    cursor: pointer;
-    margin: auto;
 }
 
-/*三本線の間隔*/
+/* 子メニュー */
 
-.icon:before {
-    top: 20px;
-}
-
-.icon:after {
-    top: -20px;
-}
-
-/*チェックボックス非表示*/
-
-.nav-toggle {
+#menu>li>ul li {
+    font-size: 14px;
     display: none;
+    background-color: #eee;
 }
 
-/*アイコンをクリックしたら*/
-
-.nav-toggle:checked~.btn-burger .icon {
-    background: transparent;
-}
-
-.nav-toggle:checked~.btn-burger .icon:before {
-    transform: rotate(-45deg);
-    top: 0;
-}
-
-.nav-toggle:checked~.btn-burger .icon:after {
-    transform: rotate(45deg);
-    top: 0;
-}
-
-.icon, .icon:before, .icon:after {
-    transition: all .8s;
-}
-
-/*中身*/
-
-.nav {
-    background-color: #666;
-}
-
-.nav-list a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
-
-.nav-list a:hover {
-    color: #f0cf19;
-}
-
-.nav-list {
-    list-style: none;
-    display: none;
-    margin: 0;
-    padding: 20px;
-    color: #fff;
-}
-
-.nav-list label {
-    display: block;
-    margin: 0 0 4px 0;
-    padding: 15px;
-    line-height: 1;
-    color: #fff;
-    background: #555;
-    cursor: pointer;
-}
-
-.nav-list input {
-    display: none;
-}
-
-.nav-list li ul li {
-    height: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-
-#menu_bar01:checked~#links01 li, #menu_bar02:checked~#links02 li {
-    height: 40px;
-    opacity: 1;
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
-.nav-contact {
-    padding: 10px;
-}
-
-.nav-toggle:checked~.nav .nav-list {
-    display: block;
-}
-/* --------------------------------------------------
-  幅768px以上のスタイル指定 ここから
--------------------------------------------------- */
+/* パソコン用 */
 
 @media screen and (min-width: 768px) {
-    /* ハンバーガーボタン */
-    .btn-burger {
-        display: none;
-        /*768px以上では使用しない */
+    #menu li:hover {
+        background: #eee;
     }
-    .nav-toggle:checked~.nav .nav-list {
-        display: none;
+    #menu>li:hover>ul>li {
+        display: block;
+        padding: 0;
     }
-    .nav {
-        float: right;
-        height: 75px;
-        background-color: #fff;
+    #menu li ul li a {
+        padding: 0 50px;
     }
-    .nav::after{
+    #menu li ul li a:hover {
+        color: #f0cf19;
+        background: #666;
+    }
+}
+
+/* スマホ用 */
+
+@media screen and (max-width: 767px) {
+    /* ハンバーガーメニューがクリックされた時 */
+    #menu-navibtn:checked~* #menu {
+        display: block;
+    }
+    #menu-navibtn:checked~* #menu>li {
+        max-height: inherit;
+        overflow-y: visible;
+    }
+    #menu>li>label:hover {
+        cursor: pointer;
+    }
+    #menu li ul {
+        position: static;
+    }
+    /* 子メニュー */
+    #menu>li>ul {
+        margin-left: initial;
+        position: relative;
+    }
+    /* 子メニューがクリックされた時 */
+    #menu input[type="checkbox"]:checked~label~ul>li {
+        max-height: inherit;
+        overflow-y: visible;
+        display: block;
+    }
+    .angletoggle:before {
+        content: "\f107";
+    }
+    #navi input[type="checkbox"]:checked~label .pd .angletoggle:before {
+        content: "\f106";
+    }
+}
+
+/* ハンバーガー */
+
+#navi #navibtn {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #navi #navibtn {
+        display: block;
+        position: absolute;
+        top: 17.5px;
+        right: 10px;
+    }
+    #navibtn span {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    #navibtn span span {
+        display: block;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    #navibtn span span::before, #navibtn span span::after, #navibtn span::after {
+        position: absolute;
+        left: 10px;
         content: "";
-        clear: both;
+        width: 20px;
+        height: 3px;
+        background-color: #666;
     }
-    .nav-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 5px;
-        text-align: center;
+    /* 上の棒 */
+    #navibtn span span::before {
+        top: 10px;
     }
-    .nav-list a {
-        color: #666;
+    #menu-navibtn:checked~#navi label#navibtn span span::before {
+        top: 19px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
     }
-    .nav-list > li{
-        width: 200px;
+    /* 下の棒 */
+    #navibtn span::after {
+        bottom: 10px;
     }
-    .nav-list label {
-        color: #666;
-        background: #fff;
+    #menu-navibtn:checked~#navi label#navibtn>span::after {
+        bottom: 18px;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+    /* 中の棒 */
+    #navibtn span span::after {
+        top: 18px;
+    }
+    #menu-navibtn:checked~#navi label#navibtn span span::after {
+        display: none;
     }
 }

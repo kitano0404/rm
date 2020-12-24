@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="福岡">
     <title>合同会社 リスクマネジメント</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -13,44 +15,55 @@
 
 <body class="home">
     <header>
-        <div class="container">
-            <h1>
-                <img src="./img/logo.png" alt="合同会社リスクマネジメント">
-            </h1>
-            <div class="drawer">
-                <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
-                <label for="navToggle" class="btn-burger">
-                    <span class="icon"></span>
+        <input type="checkbox" id="menu-navibtn" />
+        <nav id="navi" role="navigation" aria-label="メインメニュー">
+            <div>
+                <label id="navibtn" for="menu-navibtn">
+                    <span>
+                        <span>メニューを開く</span>
+                    </span>
                 </label>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><label for="menu_bar01">事業内容</label>
-                            <input type="checkbox" id="menu_bar01" class="accordion" />
-                            <ul id="links01">
+
+                <div class="container">
+                    <div class="menu-left">
+                        <h1><a href="index.html"><img src="./img/logo.png" alt=""></a></h1>
+                    </div>
+                    <ul id="menu">
+                        <li>事業内容
+                            <input type="checkbox" id="menu-parent01" />
+                            <label for="menu-parent01">
+                                <span class="pd"><i class="fas angletoggle"></i></span>
+                            </label>
+                            <ul>
                                 <li><a href="">省エネ・環境インフラ事業</a></li>
-                                <li><a href="">SIM販売・広告代理店業務</a></li>
-                                <li><a href="">コンサルティング業務</a></li>
+                                <li><a href="">SIM販売・広告代理店事業</a></li>
+                                <li><a href="">コンサルティング事業</a></li>
                                 <li><a href="">補助金サポート</a></li>
                                 <li><a href="">除菌 抗菌コンサル</a></li>
                                 <li><a href="">ワム 資金調達</a></li>
                             </ul>
                         </li>
-                        <li><label for="menu_bar02">アコーディオン２</label>
-                            <input type="checkbox" id="menu_bar02" class="accordion" />
-                            <ul id="links02">
+                        <li>会社情報
+                            <input type="checkbox" id="menu-parent02" />
+                            <label for="menu-parent02">
+                                <span class="pd"><i class="fas angletoggle"></i></span>
+                            </label>
+                            <ul>
                                 <li><a href="">トップメッセージ</a></li>
                                 <li><a href="">会社情報</a></li>
                             </ul>
                         </li>
-                        <li class="nav-contact"><a href="">お問い合わせ</a></li>
+                        <li><a class="ib" href="/contact/">お問い合わせ</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
         <div class="top-img">
-            <h2>キャッチーコピーが入ります。キャッチーコピーが入ります。</h2>
+            <div class="container">
+                <h2>キャッチーコピーが入ります。キャッチーコピーが入ります。</h2>
+            </div>
         </div>
         <section class="news bg-dkgray">
             <div class="container">
@@ -155,26 +168,26 @@
         </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="footer-flex">
-                <img class="footer-logo" src="./img/logo-rm.png" alt="RM">
-                <div class="footer-right">
-                    <h5>合同会社リスクマネジメント</h5>
-                    <address>〒810-0022<br>
-                        福岡県福岡市中央区薬院1-16-5-9F<br>
-                        TEL:092-724-3614</address>
-                    <dl class="eigyou-info">
-                        <dt>営業時間</dt>
-                        <dd>9:00〜17:00</dd>
-                    </dl>
-                    <dl class="eigyou-info">
-                        <dt>定休日</dt>
-                        <dd>土曜日、日曜日、祝日</dd>
-                    </dl>
-                </div>
-            </div>
-            <p class="copy-right">&copy;2020 合同会社リスクマネジメント</p>
+        <div class="footer-flex">
+            <div class="footer-logo">
+            <img src="./img/logo-rm.png" alt="RM">
         </div>
+            <div class="footer-right">
+                <h5>合同会社リスクマネジメント</h5>
+                <address>〒810-0022<br>
+                    福岡県福岡市中央区薬院1-16-5-9F<br>
+                    TEL:092-724-3614</address>
+                <dl class="eigyou-info">
+                    <dt>営業時間</dt>
+                    <dd>9:00〜17:00</dd>
+                </dl>
+                <dl class="eigyou-info">
+                    <dt>定休日</dt>
+                    <dd>土曜日、日曜日、祝日</dd>
+                </dl>
+            </div>
+        </div>
+        <p class="copy-right">&copy;2020 合同会社リスクマネジメント</p>
     </footer>
 </body>
 
