@@ -90,6 +90,9 @@ header {
         white-space: nowrap;
         padding-left: 20px;
     }
+    #menu li ul li{
+        padding-left: 30px;
+    }
     /* V を表示 */
     #menu>li .pd {
         display: inline-block;
@@ -125,6 +128,11 @@ header {
     background-color: #eee;
 }
 
+#menu li ul li ul {
+    top: 0;
+    left: 100%;
+}
+
 /* パソコン用 */
 
 @media screen and (min-width: 768px) {
@@ -135,12 +143,30 @@ header {
         display: block;
         padding: 0;
     }
-    #menu li ul li a {
+    #menu li ul li a, #menu li ul li ul li a {
         padding: 0 50px;
     }
-    #menu li ul li a:hover {
+    #menu li ul li a:hover, #menu > li:hover li:hover > a {
         color: #f0cf19;
         background: #666;
+    }
+    #menu>li:hover>ul>li, #menu li ul li:hover>ul>li {
+        display: block;
+        padding: 0;
+    }
+    
+    /* 階層がある場合の誘導の印 */
+    #menu li ul li ul:before {
+        position: absolute;
+        top: 32px;
+        content: "";
+        border: 7px solid transparent;
+        display: block;
+    }
+    /* 通常タイプ */
+    #menu li ul li ul:before {
+        left: -30px;
+        border-left-color: #333;
     }
 }
 

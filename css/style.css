@@ -50,12 +50,12 @@ section {
 .btn {
   display: block;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 15px 0;
   text-align: center;
   background-color: #f0cf19;
   transition: ;
   color: #fff;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .btn:hover {
@@ -218,8 +218,8 @@ address {
   margin-top: 120px;
 }
 
-.card a, .btn-w210 {
-  width: 210px;
+.card a, .btn-w170 {
+  width: 170px;
 }
 
 .about-us {
@@ -261,12 +261,12 @@ address {
   width: 40vw;
 }
 
-.btn-w275 {
-  width: 275px;
+.btn-w250 {
+  width: 250px;
 }
 
 .btn-h110 {
-  padding: 36px 0;
+  padding: 30px 0;
 }
 
 /* --------------------------------------------------
@@ -287,16 +287,13 @@ address {
     margin: 0 auto;
     padding: 50px 0;
   }
-  .card-box {
+  .card04-box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
   .card {
-    width: 28%;
-    margin-right: 5%;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    width: 23%;
+    margin-top: 0;
   }
   /*--- 見出しパーツ ---*/
   .h3-box, .h3-box-white {
