@@ -47,29 +47,30 @@ section {
   display: block;
 }
 
-.btn {
+.btn, .sm-btn a {
   display: block;
   margin: 0 auto;
   padding: 15px 0;
   text-align: center;
   background-color: #f0cf19;
-  transition: ;
   color: #fff;
   font-size: 20px;
 }
 
-.btn:hover {
+.btn:hover, .sm-btn a:hover {
   background-color: #f0ae19;
 }
 
+
+
 /*--- 見出しパーツ ---*/
 
-.h3-box, .h3-box-white {
+.h3-box, .h3-box-white, .h3-business {
   width: 90vw;
   margin: 0 auto;
 }
 
-.h3-box {
+.h3-box, .h3-business {
   background-color: #333;
 }
 
@@ -88,7 +89,7 @@ section {
   font-size: 14px;
 }
 
-.h3-box h3 {
+.h3-box h3, .h3-business {
   color: #fff;
 }
 
@@ -127,17 +128,25 @@ h5 {
 
 .top-img h2 {
   color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.home .top-img {
+#home .top-img {
   height: 30vh;
   background-image: url(../img/topimg-home.jpg);
 }
 
-.home .top-img h2 {
+#home .top-img h2 {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
   padding: 0 10vw;
+}
+
+#consulting .top-img {
+  height: 30vh;
+  background-image: url(../img/top-consulting.jpg);
 }
 
 /*--- フッター ---*/
@@ -269,6 +278,80 @@ address {
   padding: 30px 0;
 }
 
+/*--- 事業内容 ---*/
+
+.h3-business h3 {
+  font-size: 30px;
+  text-align: center;
+  padding: 25px;
+  font-weight: bold;
+}
+
+.business-overview {
+  display: block;
+}
+
+.business-p {
+  margin: 50px 0 100px;
+}
+
+.nayami-h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.nayami-h3::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #d4ae01;
+}
+
+.nayami-box {
+  background-color: #fffdf5;
+  width: 95vw;
+  margin: 100px auto;
+  padding: 50px 20px;
+}
+
+.nayami-box ul li {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  position: relative;
+}
+
+.nayami-box ul li::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  position: absolute;
+  left: -25px;
+  top: 7px;
+}
+.sm-btn a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #f0cf19;
+  color: #fff;
+}
+
+.sm-btn a:hover {
+  background-color: #f0ae19;
+}
+
 /* --------------------------------------------------
   幅768px以上のスタイル指定 ここから
 -------------------------------------------------- */
@@ -291,7 +374,7 @@ address {
     display: flex;
     justify-content: space-between;
   }
-  .card {
+  .card04-box .card {
     width: 23%;
     margin-top: 0;
   }
@@ -322,11 +405,11 @@ address {
     margin: 0;
   }
   /*--- トップイメージ ---*/
-  .home .top-img {
+  #home .top-img {
     height: 80vh;
     background-image: url(../img/topimg-home.jpg);
   }
-  .home .top-img h2 {
+  #home .top-img h2 {
     font-size: 50px;
     text-align: center;
   }
