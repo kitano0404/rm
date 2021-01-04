@@ -36,6 +36,10 @@ section {
   background-color: #666;
 }
 
+.bg-ltgray {
+  background-color: #f6f6f6;
+}
+
 .white-box {
   width: 95vw;
   margin: 0 auto;
@@ -60,8 +64,6 @@ section {
 .btn:hover, .sm-btn a:hover {
   background-color: #f0ae19;
 }
-
-
 
 /*--- 見出しパーツ ---*/
 
@@ -295,14 +297,15 @@ address {
   margin: 50px 0 100px;
 }
 
-.nayami-h3 {
+.jigyou-h3 {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
   position: relative;
+  margin-bottom: 80px;
 }
 
-.nayami-h3::after {
+.jigyou-h3::after {
   content: '';
   position: absolute;
   bottom: -30px;
@@ -315,41 +318,63 @@ address {
   background-color: #d4ae01;
 }
 
+.nayami-box, .jitsurei-box {
+  width: 95vw;
+  margin: 0 auto 50px;
+}
+
 .nayami-box {
   background-color: #fffdf5;
-  width: 95vw;
-  margin: 100px auto;
   padding: 50px 20px;
 }
 
-.nayami-box ul li {
-  font-size: 25px;
+.square-ul li {
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin-left: 25px;
   position: relative;
 }
 
-.nayami-box ul li::before{
+.square-ul li::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background-color: #333;
   position: absolute;
-  left: -25px;
+  left: -20px;
   top: 7px;
 }
+
+.square-ul li:last-child {
+  margin-bottom: 0;
+}
+
 .sm-btn a {
   display: inline-block;
   margin-top: 10px;
   padding: 5px 10px;
   text-align: center;
+  font-size: 18px;
   background-color: #f0cf19;
   color: #fff;
 }
 
 .sm-btn a:hover {
   background-color: #f0ae19;
+}
+
+.card03-box img {
+  margin-bottom: 50px;
+}
+
+.card03-box img:last-child {
+  margin-bottom: 0;
+}
+
+.jitsurei-box {
+  padding: 0 20px;
+  margin-bottom: 0;
 }
 
 /* --------------------------------------------------
@@ -382,6 +407,9 @@ address {
   .h3-box, .h3-box-white {
     width: 350px;
   }
+  .h3-business {
+    width: 700px;
+  }
   h4 {
     text-align: center;
     margin: 50px auto;
@@ -413,6 +441,9 @@ address {
     font-size: 50px;
     text-align: center;
   }
+  #consulting .top-img {
+    height: 50vh;
+  }
   /*--- 以下、各ページのデザイン ---*/
   /*--- ホーム ---*/
   .news-box dt, .news-box dd {
@@ -439,5 +470,50 @@ address {
   }
   .phone-img {
     width: 110px;
+  }
+  /*--- 事業内容 ---*/
+  .business-overview {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+  }
+  .business-p {
+    margin: 0;
+    width: 550px;
+    padding: 0;
+    margin-right: 50px;
+  }
+  .business-p p {
+    text-align: left;
+    padding: 0;
+  }
+  .business-img {
+    max-width: 600px;
+  }
+  .jigyou-h3 {
+    margin-bottom: 100px;
+  }
+  .nayami-box, .jitsurei-box {
+    width: 100%;
+  }
+  .nayami-box, .jitsurei-box {
+    padding: 50px 125px;
+  }
+  .card03-box{
+    display: flex;
+    max-width: 980px;
+    margin-bottom: 50px;
+  }
+  .card03-box img {
+    margin-bottom: 0;
+    width: 32%;
+    margin-right: 4%;
+  }
+  .card03-box img:last-child {
+    margin-right: 0;
+  }
+  .jitsurei-box {
+    padding: 0 125px;
+    margin-bottom: 0;
   }
 }
