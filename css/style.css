@@ -121,6 +121,7 @@ h5 {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 30vh;
   position: relative;
   background-color: rgba(0, 0, 0, .5);
   background-size: cover;
@@ -136,7 +137,6 @@ h5 {
 }
 
 #home .top-img {
-  height: 30vh;
   background-image: url(../img/topimg-home.jpg);
 }
 
@@ -146,9 +146,16 @@ h5 {
   padding: 0 10vw;
 }
 
-#consulting .top-img {
-  height: 30vh;
+#consulting .top-img, #financing .top-img, #subsidy .top-img, #environmental-infrastructure .top-img, #advertising-agency .top-img, #removing-bacteria .top-img {
   background-image: url(../img/top-consulting.jpg);
+}
+
+#top-message .top-img {
+  background-image: url(../img/topimg-topmessage.jpg);
+}
+
+#information .top-img {
+  background-image: url(../img/topimg-information.jpg);
 }
 
 /*--- フッター ---*/
@@ -291,10 +298,11 @@ address {
 
 .business-overview {
   display: block;
+  margin-bottom: 100px;
 }
 
 .business-p {
-  margin: 50px 0 100px;
+  margin-top: 50px;
 }
 
 .jigyou-h3 {
@@ -377,6 +385,55 @@ address {
   margin-bottom: 0;
 }
 
+/*--- 会社情報 ---*/
+
+.topmessage-box {
+  display: block;
+  margin-bottom: 0;
+}
+
+.topmessage-p {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.topmessage-p .name {
+  text-align: right;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.topmessage-p .name strong {
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 20px;
+}
+
+.gaiyou-dl {
+  width: 95vw;
+  margin: 100px auto 0;
+}
+
+.gaiyou-dl dl {
+  display: block;
+}
+
+.gaiyou-dl dl dt {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #f6f6f6;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gaiyou-dl dl dd {
+  width: 100%;
+  padding: 50px 10px;
+  font-size: 23px;
+}
+
 /* --------------------------------------------------
   幅768px以上のスタイル指定 ここから
 -------------------------------------------------- */
@@ -433,6 +490,9 @@ address {
     margin: 0;
   }
   /*--- トップイメージ ---*/
+  .top-img {
+    height: 50vh;
+  }
   #home .top-img {
     height: 80vh;
     background-image: url(../img/topimg-home.jpg);
@@ -440,9 +500,6 @@ address {
   #home .top-img h2 {
     font-size: 50px;
     text-align: center;
-  }
-  #consulting .top-img {
-    height: 50vh;
   }
   /*--- 以下、各ページのデザイン ---*/
   /*--- ホーム ---*/
@@ -472,22 +529,24 @@ address {
     width: 110px;
   }
   /*--- 事業内容 ---*/
-  .business-overview {
+  .business-overview, .topmessage-box {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .business-overview {
     margin-bottom: 100px;
   }
-  .business-p {
+  .business-p, .topmessage-p {
     margin: 0;
     width: 550px;
     padding: 0;
     margin-right: 50px;
   }
-  .business-p p {
+  .business-p p, .topmessage-p p {
     text-align: left;
     padding: 0;
   }
-  .business-img {
+  .business-img, .topmessage-img {
     max-width: 600px;
   }
   .jigyou-h3 {
@@ -499,7 +558,7 @@ address {
   .nayami-box, .jitsurei-box {
     padding: 50px 125px;
   }
-  .card03-box{
+  .card03-box {
     display: flex;
     max-width: 980px;
     margin-bottom: 50px;
@@ -515,5 +574,25 @@ address {
   .jitsurei-box {
     padding: 0 125px;
     margin-bottom: 0;
+  }
+  /*--- 会社情報 ---*/
+  .gaiyou-dl {
+    width: 980px;
+    margin: 100px auto 0;
+  }
+  .gaiyou-dl dl {
+    display: flex;
+    border-bottom: #ccc 1px solid;
+  }
+  .gaiyou-dl dl:last-child{
+    border-bottom: none;
+  }
+  .gaiyou-dl dl dt {
+    width: 40%;
+  }
+  .gaiyou-dl dl dd {
+    width: 100%;
+    padding: 30px 50px;
+    font-size: 23px;
   }
 }
