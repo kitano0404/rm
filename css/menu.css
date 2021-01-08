@@ -35,21 +35,22 @@ header {
 
 #menu {
     float: right;
+    display: flex;
 }
 
-#menu li {
+#menu-ul li {
     position: relative;
     white-space: nowrap;
     padding: 0 50px;
 }
 
-#menu li a {
+#menu-ul li a {
     display: block;
     font-weight: bold;
     color: #666;
 }
 
-#menu>li {
+#menu-ul>li {
     float: left;
     line-height: 75px;
     color: #666;
@@ -58,7 +59,7 @@ header {
 
 /* パソコンでは V を非表示 */
 
-#menu>li .pd {
+#menu-ul>li .pd {
     display: none;
 }
 
@@ -77,31 +78,31 @@ header {
     }
     .menu-left img {
         padding: 15px 5px;
-        width: 75vw;
+        width: 300px;
     }
     /* 基本非表示 */
     #menu {
         display: none;
         float: none;
     }
-    #menu li {
+    #menu-ul li {
         height: auto;
         width: 100%;
         white-space: nowrap;
         padding-left: 20px;
     }
-    #menu li ul li{
+    #menu-ul li ul li {
         padding-left: 30px;
     }
     /* V を表示 */
-    #menu>li .pd {
+    #menu-ul>li .pd {
         display: inline-block;
         width: 100%;
     }
-    #menu li a {
+    #menu-ul li a {
         display: inline-block;
     }
-    #menu li i {
+    #menu-ul li i {
         padding: 0px 6px;
     }
     /* メニューを移動させないため */
@@ -115,48 +116,47 @@ header {
 
 /* ドロップダウンメニュー */
 
-#menu li ul {
+#menu-ul li ul {
     position: absolute;
     left: 0;
 }
 
 /* 子メニュー */
 
-#menu>li>ul li {
+#menu-ul>li>ul li {
     font-size: 14px;
     display: none;
     background-color: #eee;
 }
 
-#menu li ul li ul {
+#menu-ul li ul li ul {
     top: 0;
     left: 100%;
 }
 
 /* パソコン用 */
 
-@media screen and (min-width: 768px) {
-    #menu li:hover {
+@media screen and (min-width: 766px) {
+    #menu-ul li:hover {
         background: #eee;
     }
-    #menu>li:hover>ul>li {
+    #menu-ul>li:hover>ul>li {
         display: block;
         padding: 0;
     }
-    #menu li ul li a, #menu li ul li ul li a {
-        padding: 0 50px;
+    #menu-ul li ul li a, #menu-ul li ul li ul li a {
+        padding: 0 30px;
     }
-    #menu li ul li a:hover, #menu > li:hover li:hover > a {
+    #menu-ul li ul li a:hover, #menu-ul>li:hover li:hover>a {
         color: #f0cf19;
         background: #666;
     }
-    #menu>li:hover>ul>li, #menu li ul li:hover>ul>li {
+    #menu-ul>li:hover>ul>li, #menu-ul li ul li:hover>ul>li {
         display: block;
         padding: 0;
     }
-    
     /* 階層がある場合の誘導の印 */
-    #menu li ul li ul:before {
+    #menu-ul li ul li ul:before {
         position: absolute;
         top: 32px;
         content: "";
@@ -164,9 +164,26 @@ header {
         display: block;
     }
     /* 通常タイプ */
-    #menu li ul li ul:before {
+    #menu-ul li ul li ul:before {
         left: -30px;
         border-left-color: #333;
+    }
+    /*  お問い合わせボタン */
+    .navi-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+    }
+    .navi-contact a {
+        display: block;
+        color: #fff;
+        background-color: #f0cf19;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+    .navi-contact a:hover {
+        background-color: #f0ae19;
     }
 }
 
@@ -177,23 +194,26 @@ header {
     #menu-navibtn:checked~* #menu {
         display: block;
     }
-    #menu-navibtn:checked~* #menu>li {
+    #menu-navibtn:checked~* #menu-ul>li {
         max-height: inherit;
         overflow-y: visible;
     }
-    #menu>li>label:hover {
+    #menu-ul>li>label:hover {
         cursor: pointer;
     }
-    #menu li ul {
+    #menu-ul>li {
+        line-height: 60px;
+    }
+    #menu-ul li ul {
         position: static;
     }
     /* 子メニュー */
-    #menu>li>ul {
+    #menu-ul>li>ul {
         margin-left: initial;
         position: relative;
     }
     /* 子メニューがクリックされた時 */
-    #menu input[type="checkbox"]:checked~label~ul>li {
+    #menu-ul input[type="checkbox"]:checked~label~ul>li {
         max-height: inherit;
         overflow-y: visible;
         display: block;
@@ -204,6 +224,22 @@ header {
     #navi input[type="checkbox"]:checked~label .pd .angletoggle:before {
         content: "\f106";
     }
+    /*  お問い合わせボタン */
+    .navi-contact {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .navi-contact a {
+        display: block;
+        color: #fff;
+        background-color: #f0cf19;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+    .navi-contact a:hover {
+        background-color: #f0ae19;
+    }
 }
 
 /* ハンバーガー */
@@ -212,7 +248,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
     #navi #navibtn {
         display: block;
         position: absolute;

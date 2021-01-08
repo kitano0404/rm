@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/menu.css">
 </head>
 
-<body id="top-message">
+<body id="contact">
     <header>
         <input type="checkbox" id="menu-navibtn" />
         <nav id="navi" role="navigation" aria-label="メインメニュー">
@@ -72,23 +72,50 @@
     <main>
         <div class="top-img">
             <div class="container">
-                <h2>トップメッセージ</h2>
+                <h2>お問い合わせ</h2>
             </div>
         </div>
         <section>
             <div class="container">
-                <h3 class="jigyou-h3">代表者挨拶</h3>
-                <h4 class="h4-center">お客様の想いを何より大切に<br>
-                    寄り添い、サポートします</h4>
-                <div class="topmessage-box">
-                    <div class="topmessage-img">
-                        <img src="./img/daihyo.jpg" alt="">
-                    </div>
-                    <div class="topmessage-p">
-                        <p>代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。代表からお客様に向けたメッセージが入ります。
-                        </p>
-                        <p class="name">代表社員<strong>東　博史</strong></p>
-                    </div>
+                <h4 class="h4-center">各種ご相談、お問い合わせにつきましては、<br>
+                    お電話または、以下のフォームから<br>
+                    承っております。</h4>
+                <div class="tel-btn">
+                    <a href=""><img src="./img/tel-btn.png" alt="TEL:092-724-3614"></a>
+                </div>
+                <p class="uketukejikan-center">9:00〜17:00（土・日・祝日は除く）</p>
+                <div class="form-box">
+                    <form action="#">
+                        <dl>
+                            <dt><label for="company-name">会社名
+                                </label></dt>
+                            <dd><input type="text" name="company-name" id="company-name" class="contact-form"></dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="name">お名前
+                                    <span class="must">必須</span>
+                                </label></dt>
+                            <dd><input type="text" name="name" id="name" class="contact-form"></dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="email">メールアドレス
+                                    <span class="must">必須</span>
+                                </label></dt>
+                            <dd><input type="mail" name="email" id="email" class="contact-form"></dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="tel">電話番号
+                                    <span class="must">必須</span>
+                                </label></dt>
+                            <dd><input type="number" name="tel" id="tel" class="contact-form"></dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="comment">問い合わせ内容</label>
+                                <span class="must">必須</span></dt>
+                            <dd><textarea id="comment" name="comment" rows="10"></textarea></dd>
+                        </dl>
+                        <button class="confirmation-btn">送信内容のご確認</button>
+                    </form>
                 </div>
             </div>
         </section>
