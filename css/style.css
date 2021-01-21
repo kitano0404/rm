@@ -21,6 +21,9 @@ p {
 main {
   padding-top: 75px;
 }
+address{
+  margin-bottom: 5px;
+}
 
 /*--- 共通パーツ ---*/
 
@@ -51,7 +54,7 @@ section {
   display: block;
 }
 
-.btn, .sm-btn a {
+.btn, .sm-btn a, .contact-btn a{
   display: block;
   margin: 0 auto;
   padding: 15px 0;
@@ -61,7 +64,7 @@ section {
   font-size: 18px;
 }
 
-.btn:hover, .sm-btn a:hover {
+.btn:hover, .sm-btn a:hover, .contact-btn a:hover {
   background-color: #f0ae19;
 }
 
@@ -110,7 +113,7 @@ h4 {
 h5 {
   font-size: 20px;
   font-weight: bold;
-  margin: 50px 0;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -210,6 +213,7 @@ address {
   font-size: 14px;
   text-align: center;
   padding-top: 50px;
+  margin-bottom: 20px;
 }
 
 /*--- 以下、各ページのデザイン ---*/
@@ -236,11 +240,16 @@ address {
   color: #fff;
   font-size: 18px;
 }
-
-.card {
-  margin-top: 120px;
+.business-h5, .business-h5-2{
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 70px;
 }
 
+.card {
+  margin-top: 100px;
+}
 .card a, .btn-w170 {
   width: 170px;
 }
@@ -303,9 +312,8 @@ address {
 
 .business-overview {
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
-
 .business-p {
   margin-top: 50px;
 }
@@ -333,14 +341,13 @@ address {
 
 .nayami-box, .jitsurei-box {
   width: 95vw;
-  margin: 0 auto 50px;
+  margin: 0 auto;
 }
 
-.nayami-box {
+.nayami-box{
   background-color: #fffdf5;
   padding: 50px 20px;
 }
-
 .square-ul li {
   font-size: 20px;
   font-weight: bold;
@@ -376,6 +383,9 @@ address {
 .sm-btn a:hover {
   background-color: #f0ae19;
 }
+.card03-box {
+  margin-top: 70px;
+}
 
 .card03-box img {
   margin-bottom: 50px;
@@ -388,6 +398,37 @@ address {
 .jitsurei-box {
   padding: 0 20px;
   margin-bottom: 0;
+}
+.food-buzz-btn{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.food-buzz-btn a{
+  display: block;
+  padding: 20px 50px;
+  background-color: #e00d20;
+  color: #fff;
+  text-align: center;
+  font-family: 'Paytone One', sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 20px;
+}
+.food-buzz-btn a:hover{
+  opacity: 0.7;
+}
+.contact-btn{
+  margin: 70px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .contact-btn:last-child{
+  margin-bottom: 0;
+}
+.contact-btn a{
+  padding: 20px 50px;
 }
 
 /*--- 会社情報 ---*/
@@ -436,6 +477,10 @@ address {
 .gaiyou-dl dl dd {
   width: 100%;
   padding: 50px 10px;
+}
+.gaiyou-dl dl dd ul li ul li{
+  margin-left: 30px;
+  list-style-type: disc;
 }
 
 .map {
@@ -535,6 +580,9 @@ form dl dd textarea {
   main {
     padding-top: 75px;
   }
+  section {
+    padding: 100px 0;
+  }
   /*--- 共通パーツ ---*/
   .container {
     max-width: 980px;
@@ -544,14 +592,6 @@ form dl dd textarea {
     width: 100%;
     margin: 0 auto;
     padding: 50px 0;
-  }
-  .card04-box {
-    display: flex;
-    justify-content: space-between;
-  }
-  .card04-box .card {
-    width: 23%;
-    margin-top: 0;
   }
   /*--- 見出しパーツ ---*/
   .h3-box, .h3-box-white {
@@ -599,9 +639,17 @@ form dl dd textarea {
   .news-box dt, .news-box dd {
     padding: 0 100px;
   }
-  .card h5 {
-    margin: 30px 0;
-    height: 70px;
+  .business-card02{
+    width: 640px;
+    margin: 0 auto 70px;
+  }
+  .business-card02, .business-card03 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .business-card02 .card, .business-card03 .card{
+    width: 300px;
+    margin-top: 0;
   }
   .about-p {
     margin: 0 200px 50px;
@@ -622,24 +670,21 @@ form dl dd textarea {
     width: 110px;
   }
   /*--- 事業内容 ---*/
-  .business-overview, .topmessage-box {
+  .business-overview{
     display: flex;
     flex-direction: row-reverse;
   }
-  .business-overview {
-    margin-bottom: 100px;
-  }
-  .business-p, .topmessage-p {
+  .business-p{
     margin: 0;
-    width: 550px;
+    width: 570px;
     padding: 0;
     margin-right: 50px;
   }
-  .business-p p, .topmessage-p p {
+  .business-p p{
     text-align: left;
     padding: 0;
   }
-  .business-img, .topmessage-img {
+  .business-img img{
     max-width: 600px;
   }
   .nayami-box, .jitsurei-box {
@@ -647,6 +692,9 @@ form dl dd textarea {
   }
   .nayami-box, .jitsurei-box {
     padding: 50px 125px;
+  }
+  .business-card02{
+    display: flex;
   }
   .card03-box {
     display: flex;
@@ -661,11 +709,17 @@ form dl dd textarea {
   .card03-box img:last-child {
     margin-right: 0;
   }
+
   .jitsurei-box {
     padding: 0 125px;
     margin-bottom: 0;
   }
   /*--- 会社情報 ---*/
+  .topmessage-p{
+    margin: 0 auto;
+    width: 700px;
+    padding: 0;
+  }
   .gaiyou-dl {
     width: 980px;
     margin: 0 auto 50px;
@@ -679,6 +733,9 @@ form dl dd textarea {
   }
   .gaiyou-dl dl dt {
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .gaiyou-dl dl dd {
     width: 100%;

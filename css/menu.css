@@ -41,7 +41,7 @@ header {
 #menu-ul li {
     position: relative;
     white-space: nowrap;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 #menu-ul li a {
@@ -145,7 +145,7 @@ header {
         padding: 0;
     }
     #menu-ul li ul li a, #menu-ul li ul li ul li a {
-        padding: 0 30px;
+        padding: 0 20px;
     }
     #menu-ul li ul li a:hover, #menu-ul>li:hover li:hover>a {
         color: #f0cf19;
@@ -173,7 +173,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 30px;
+        padding-left: 10px;
     }
     .navi-contact a {
         display: block;
