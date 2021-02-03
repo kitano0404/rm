@@ -70,12 +70,12 @@ section {
 
 /*--- 見出しパーツ ---*/
 
-.h3-box, .h3-box-white, .h3-business {
+.h3-box, .h3-box-white, .h1-business {
   width: 90vw;
   margin: 0 auto;
 }
 
-.h3-box, .h3-business {
+.h3-box, .h1-business {
   background-color: #333;
 }
 
@@ -83,7 +83,7 @@ section {
   background-color: #fff;
 }
 
-.h3-box h3, .h3-box-white h3 {
+.h3-box h3, .h3-box-white h3{
   font-size: 27px;
   text-align: center;
   line-height: 1;
@@ -94,7 +94,7 @@ section {
   font-size: 14px;
 }
 
-.h3-box h3, .h3-business {
+.h3-box h3, .h1-business h1{
   color: #fff;
 }
 
@@ -132,7 +132,7 @@ h5 {
   background-blend-mode: multiply;
 }
 
-.top-img h2 {
+.top-img h1, .top-img h2 {
   color: #fff;
   text-align: center;
   font-size: 30px;
@@ -240,13 +240,6 @@ address {
   color: #fff;
   font-size: 18px;
 }
-.business-h5, .business-h5-2{
-  text-align: center;
-  font-weight: bold;
-  position: relative;
-  margin-bottom: 70px;
-}
-
 .card {
   margin-top: 100px;
 }
@@ -303,11 +296,12 @@ address {
 
 /*--- 事業内容 ---*/
 
-.h3-business h3 {
+.h1-business h1{
   font-size: 27px;
-  text-align: center;
-  padding: 25px;
   font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+  padding: 25px;
 }
 
 .business-overview {
@@ -597,7 +591,7 @@ form dl dd textarea {
   .h3-box, .h3-box-white {
     width: 350px;
   }
-  .h3-business {
+  .h1-business {
     width: 700px;
   }
   h4 {
