@@ -209,11 +209,13 @@ address {
   padding: 3px;
 }
 
-.copy-right {
-  font-size: 14px;
+.copy-right{
   text-align: center;
   padding-top: 50px;
   margin-bottom: 20px;
+}
+.copy-right small {
+  font-size: 14px;
 }
 
 /*--- 以下、各ページのデザイン ---*/
