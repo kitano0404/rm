@@ -313,6 +313,23 @@ address {
 .business-p {
   margin-top: 50px;
 }
+.business-p .mt-30{
+  margin-top: 30px;
+}
+.coupon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+.coupon dt{
+  margin-right: 20px;
+}
+.coupon dd{
+  padding: 10px 30px;
+  background-color: #e73a8f;
+  color: #ffffff;
+}
 
 .jigyou-h3 {
   font-size: 23px;
@@ -413,6 +430,30 @@ address {
 }
 .food-buzz-btn a:hover{
   opacity: 0.7;
+}
+.sbr-btn{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sbr-btn a{
+  display: block;
+  padding: 20px 50px;
+  border: #231815 1px solid;
+  color: #e73a8f;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+.sbr-btn a:hover{
+  background-color: #eeeeee;
+  opacity: 0.7;
+  
+}
+
+.sbr-btn a span{
+  color: #231815;
 }
 .contact-btn{
   margin: 70px 0 100px;
@@ -573,6 +614,9 @@ form dl dd textarea {
 -------------------------------------------------- */
 
 @media screen and (min-width: 768px) {
+  .pc-none{
+    display: none;
+  }
   main {
     padding-top: 75px;
   }
