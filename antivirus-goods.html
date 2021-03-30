@@ -15,6 +15,21 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- ↓クリップボード操作のために使用するjsを読み込む　( https://clipboardjs.com/ ) -->
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
+
+    <script>
+        var clipboard = new Clipboard('.copy_btn');    //clipboard.min.jsが動作する要素をクラス名で指定
+
+        //クリックしたときの挙動
+        $(function () {
+            $('.copy_btn').click(function () {
+                $(this).addClass('copied');    //ボタンの色などを変更するためにクラスを追加
+                $(this).text('コピーしました');    //テキストの書き換え
+            });
+        });
+    </script>
 </head>
 
 <body id="environmental-infrastructure">
@@ -50,7 +65,7 @@
                                         <ul>
                                             <li><a href="decontamination.html">除染作業のご相談</a></li>
                                             <li><a href="antivirus-goods.html">ウイルス対策グッズの販売</a></li>
-                                            <li><a href="photocatalytic-coding.html">次世代型光触媒コーディング</a></li>
+                                            <li><a href="photocatalytic-coating.html">次世代型光触媒コーティング</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="advertising-agency.html">広告代理店事業</a></li>
@@ -92,7 +107,7 @@
                 <h4>ウイルス対策グッズの販売のキャッチコピーが入ります。ウイルス対策グッズの販売のキャッチコピーが入ります。</h4>
                 <div class="business-overview">
                     <div class="business-img">
-                        <img src="./img/IMG_8035.JPG" alt="">
+                        <img src="./img/antivirus-googs01.jpg" alt="ウィルスブロッカー「ANTI VIRUS アンチウイルス」などを取扱しています">
                     </div>
                     <div class="business-p">
                         <p>ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。ウイルス対策グッズの販売の概要が入ります。
@@ -105,7 +120,8 @@
                             （送料が無料になります）</p>
                         <dl class="coupon">
                             <dt>クーポンコード</dt>
-                            <dd>sbr-a038</dd>
+                            <dd class="copy_btn" data-clipboard-text="sbr-a038">
+                                sbr-a038</dd>
                         </dl>
                     </div>
                 </div>
@@ -120,9 +136,9 @@
                 </div>
                 -->
                 <div class="card03-box">
-                    <img src="./img/IMG_8036.JPG" alt="">
-                    <img src="./img/IMG_8037.JPG" alt="">
-                    <img src="./img/IMG_8038.JPG" alt="">
+                    <img src="./img/antivirus-googs02.jpg" alt="首から掛けるだけの簡単ウイルス対策商品です。">
+                    <img src="./img/antivirus-googs03.jpg" alt="サイズ変更可能だから、男女兼用です">
+                    <img src="./img/antivirus-googs04.jpg" alt="オフィスや学校、病院や介護施設など、様々なシーンでご利用頂けます。">
                 </div>
                 <div class="contact-btn">
                     <a href="contact.html">お問い合わせはこちら</a>
@@ -130,6 +146,7 @@
                 </div>
             </div>
         </section>
+        <!--
         <section class="bg-ltgray">
             <div class="container">
                 <h3 class="jigyou-h3">実績実例</h3>
@@ -148,6 +165,7 @@
                 </div>
             </div>
         </section>
+    -->
     </main>
     <footer>
         <div class="footer-flex">

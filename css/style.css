@@ -21,7 +21,8 @@ p {
 main {
   padding-top: 75px;
 }
-address{
+
+address {
   margin-bottom: 5px;
 }
 
@@ -54,7 +55,7 @@ section {
   display: block;
 }
 
-.btn, .sm-btn a, .contact-btn a{
+.btn, .sm-btn a, .contact-btn a {
   display: block;
   margin: 0 auto;
   padding: 15px 0;
@@ -83,7 +84,7 @@ section {
   background-color: #fff;
 }
 
-.h3-box h3, .h3-box-white h3{
+.h3-box h3, .h3-box-white h3 {
   font-size: 27px;
   text-align: center;
   line-height: 1;
@@ -94,7 +95,7 @@ section {
   font-size: 14px;
 }
 
-.h3-box h3, .h1-business h1{
+.h3-box h3, .h1-business h1 {
   color: #fff;
 }
 
@@ -209,11 +210,12 @@ address {
   padding: 3px;
 }
 
-.copy-right{
+.copy-right {
   text-align: center;
   padding-top: 50px;
   margin-bottom: 20px;
 }
+
 .copy-right small {
   font-size: 14px;
 }
@@ -242,9 +244,11 @@ address {
   color: #fff;
   font-size: 18px;
 }
+
 .card {
   margin-top: 100px;
 }
+
 .card a, .btn-w170 {
   width: 170px;
 }
@@ -298,7 +302,7 @@ address {
 
 /*--- 事業内容 ---*/
 
-.h1-business h1{
+.h1-business h1 {
   font-size: 27px;
   font-weight: bold;
   text-align: center;
@@ -310,22 +314,27 @@ address {
   display: block;
   margin-bottom: 0;
 }
+
 .business-p {
   margin-top: 50px;
 }
-.business-p .mt-30{
+
+.business-p .mt-30 {
   margin-top: 30px;
 }
-.coupon{
+
+.coupon {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -30px;
 }
-.coupon dt{
+
+.coupon dt {
   margin-right: 20px;
 }
-.coupon dd{
+
+.copy_btn {
   padding: 10px 30px;
   background-color: #e73a8f;
   color: #ffffff;
@@ -357,10 +366,11 @@ address {
   margin: 0 auto;
 }
 
-.nayami-box{
+.nayami-box {
   background-color: #fffdf5;
   padding: 50px 20px;
 }
+
 .square-ul li {
   font-size: 20px;
   font-weight: bold;
@@ -396,6 +406,7 @@ address {
 .sm-btn a:hover {
   background-color: #f0ae19;
 }
+
 .card03-box {
   margin-top: 70px;
 }
@@ -412,13 +423,15 @@ address {
   padding: 0 20px;
   margin-bottom: 0;
 }
-.food-buzz-btn{
+
+.food-buzz-btn {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.food-buzz-btn a{
+
+.food-buzz-btn a {
   display: block;
   padding: 20px 50px;
   background-color: #e00d20;
@@ -428,16 +441,19 @@ address {
   letter-spacing: 0.15em;
   font-size: 20px;
 }
-.food-buzz-btn a:hover{
+
+.food-buzz-btn a:hover {
   opacity: 0.7;
 }
-.sbr-btn{
+
+.sbr-btn {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sbr-btn a{
+
+.sbr-btn a {
   display: block;
   padding: 20px 50px;
   border: #231815 1px solid;
@@ -446,25 +462,49 @@ address {
   text-align: center;
   font-size: 20px;
 }
-.sbr-btn a:hover{
+
+.sbr-btn a:hover {
   background-color: #eeeeee;
   opacity: 0.7;
-  
 }
 
-.sbr-btn a span{
+.sbr-btn a span {
   color: #231815;
 }
-.contact-btn{
+
+.qrmeishi-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qrmeishi-btn a {
+  display: block;
+  padding: 20px 50px;
+  border: #cc0000 1px solid;
+  background-color: #cc0000;
+  color: #ffffff;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.qrmeishi-btn a:hover {
+  opacity: 0.7;
+}
+
+.contact-btn {
   margin: 70px 0 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .contact-btn:last-child{
+
+section .contact-btn:last-child {
   margin-bottom: 0;
 }
-.contact-btn a{
+
+.contact-btn a {
   padding: 20px 50px;
 }
 
@@ -515,7 +555,8 @@ section .contact-btn:last-child{
   width: 100%;
   padding: 50px 10px;
 }
-.gaiyou-dl dl dd ul li ul li{
+
+.gaiyou-dl dl dd ul li ul li {
   margin-left: 30px;
   list-style-type: disc;
 }
@@ -614,7 +655,7 @@ form dl dd textarea {
 -------------------------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .pc-none{
+  .pc-none {
     display: none;
   }
   main {
@@ -679,15 +720,15 @@ form dl dd textarea {
   .news-box dt, .news-box dd {
     padding: 0 100px;
   }
-  .business-card02{
-    width: 640px;
-    margin: 0 auto 70px;
-  }
-  .business-card02, .business-card03 {
+  .business-card03 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
-  .business-card02 .card, .business-card03 .card{
+  .business-card03:last-child {
+    margin-bottom: 50px;
+  }
+  .business-card03 .card {
     width: 300px;
     margin-top: 0;
   }
@@ -710,21 +751,21 @@ form dl dd textarea {
     width: 110px;
   }
   /*--- 事業内容 ---*/
-  .business-overview{
+  .business-overview {
     display: flex;
     flex-direction: row-reverse;
   }
-  .business-p{
+  .business-p {
     margin: 0;
     width: 570px;
     padding: 0;
     margin-right: 50px;
   }
-  .business-p p{
+  .business-p p {
     text-align: left;
     padding: 0;
   }
-  .business-img img{
+  .business-img img {
     max-width: 600px;
   }
   .nayami-box, .jitsurei-box {
@@ -733,7 +774,7 @@ form dl dd textarea {
   .nayami-box, .jitsurei-box {
     padding: 50px 125px;
   }
-  .business-card02{
+  .business-card02 {
     display: flex;
   }
   .card03-box {
@@ -744,18 +785,17 @@ form dl dd textarea {
   .card03-box img {
     margin-bottom: 0;
     width: 32%;
-    margin-right: 4%;
+    margin-right: 2%;
   }
   .card03-box img:last-child {
     margin-right: 0;
   }
-
   .jitsurei-box {
     padding: 0 125px;
     margin-bottom: 0;
   }
   /*--- 会社情報 ---*/
-  .topmessage-p{
+  .topmessage-p {
     margin: 0 auto;
     width: 700px;
     padding: 0;
