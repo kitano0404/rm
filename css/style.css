@@ -69,6 +69,10 @@ section {
   background-color: #f0ae19;
 }
 
+.mt-70{
+  margin-top: 70px;
+}
+
 /*--- 見出しパーツ ---*/
 
 .h3-box, .h3-box-white, .h1-business {
@@ -127,7 +131,7 @@ h5 {
   width: 100vw;
   height: 30vh;
   position: relative;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .3);
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
@@ -138,10 +142,12 @@ h5 {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
+  text-shadow:1px 1px 3px #707070;
 }
 
 #home .top-img {
-  background-image: url(../img/topimg-home.jpg);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../img/top-index.jpg);
 }
 
 #home .top-img h2 {
@@ -151,19 +157,19 @@ h5 {
 }
 
 #consulting .top-img, #financing .top-img, #subsidy .top-img, #environmental-infrastructure .top-img, #advertising-agency .top-img, #removing-bacteria .top-img {
-  background-image: url(../img/top-consulting.jpg);
+  background-image: url(../img/top-bisiness.jpg);
 }
 
 #top-message .top-img {
-  background-image: url(../img/topimg-topmessage.jpg);
+  background-image: url(../img/top-topmessage.jpg);
 }
 
 #information .top-img {
-  background-image: url(../img/topimg-information.jpg);
+  background-image: url(../img/top-information.jpg);
 }
 
 #contact .top-img {
-  background-image: url(../img/topimg-contact.jpg);
+  background-image: url(../img/top-contact.jpg);
 }
 
 /*--- フッター ---*/
@@ -236,13 +242,18 @@ address {
 }
 
 .news-date {
+  display: block;
   margin-bottom: 10px;
-  padding: 10px 0;
+  margin-right: 10px;
+  padding: 10px 5px;
   width: 140px;
   text-align: center;
   background-color: #d4ae01;
   color: #fff;
   font-size: 18px;
+}
+.news-box dd {
+  margin-top: 20px;
 }
 
 .card {
@@ -258,7 +269,7 @@ address {
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
-  background-image: url(../img/office.jpg);
+  background-image: url(../img/about-sm.jpg);
 }
 
 .about-us h4, .about-us p {
@@ -319,7 +330,7 @@ address {
   margin-top: 50px;
 }
 
-.business-p .mt-30 {
+.mt-30 {
   margin-top: 30px;
 }
 
@@ -445,9 +456,11 @@ address {
 .food-buzz-btn a:hover {
   opacity: 0.7;
 }
+.sbr-box{
+  margin-top: 50px;
+}
 
 .sbr-btn {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,7 +469,8 @@ address {
 .sbr-btn a {
   display: block;
   padding: 20px 50px;
-  border: #231815 1px solid;
+  border: #707070 1px solid;
+  border-bottom: #707070 5px solid;
   color: #e73a8f;
   font-family: 'Anton', sans-serif;
   text-align: center;
@@ -709,7 +723,6 @@ form dl dd textarea {
   }
   #home .top-img {
     height: 80vh;
-    background-image: url(../img/topimg-home.jpg);
   }
   #home .top-img h2 {
     font-size: 50px;
@@ -720,17 +733,22 @@ form dl dd textarea {
   .news-box dt, .news-box dd {
     padding: 0 100px;
   }
+  .news-date {
+    display: inline-block;
+  }
   .business-card03 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
-  }
-  .business-card03:last-child {
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: -70px;
   }
   .business-card03 .card {
     width: 300px;
     margin-top: 0;
+    margin-bottom: 70px;
+  }
+  .about-us {
+    background-image: url(../img/about-pc.jpg);
   }
   .about-p {
     margin: 0 200px 50px;
@@ -767,6 +785,13 @@ form dl dd textarea {
   }
   .business-img img {
     max-width: 600px;
+  }
+  .sbr-box{
+    display: flex;
+    justify-content: center;
+  }
+  ..mt-30 {
+    margin-top: 70px;
   }
   .nayami-box, .jitsurei-box {
     width: 100%;
