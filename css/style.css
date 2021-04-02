@@ -69,7 +69,7 @@ section {
   background-color: #f0ae19;
 }
 
-.mt-70{
+.mt-70 {
   margin-top: 70px;
 }
 
@@ -142,7 +142,7 @@ h5 {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  text-shadow:1px 1px 3px #707070;
+  text-shadow: 1px 1px 3px #707070;
 }
 
 #home .top-img {
@@ -253,6 +253,7 @@ address {
   color: #fff;
   font-size: 18px;
 }
+
 .news-box dd {
   margin-top: 20px;
 }
@@ -457,7 +458,8 @@ address {
 .food-buzz-btn a:hover {
   opacity: 0.7;
 }
-.sbr-box{
+
+.sbr-box {
   margin-top: 50px;
 }
 
@@ -493,6 +495,7 @@ address {
   justify-content: center;
   align-items: center;
 }
+
 .qrmeishi-btn a {
   display: block;
   padding: 20px 50px;
@@ -642,6 +645,11 @@ form dl dd input {
   width: 100%;
 }
 
+form dl dd span {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
 form dl dd textarea {
   border: #ccc 1px solid;
   font-size: 18px;
@@ -649,9 +657,21 @@ form dl dd textarea {
   width: 100%;
 }
 
+.check-box dd {
+  margin-top: 10px;
+}
+
+form dl dd .checkbox {
+  width: 20px;
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+}
+
 .confirmation-btn {
   display: block;
-  width: 200px;
+  width: 250px;
   padding: 15px 0;
   background-color: #999;
   color: #fff;
@@ -664,7 +684,8 @@ form dl dd textarea {
 .confirmation-btn:hover {
   background-color: #f0ae19;
 }
-.thank-p{
+
+.thank-p {
   line-height: 2;
   margin-top: -30px;
 }
@@ -791,7 +812,7 @@ form dl dd textarea {
   .business-img img {
     max-width: 600px;
   }
-  .sbr-box{
+  .sbr-box {
     display: flex;
     justify-content: center;
   }
@@ -879,17 +900,21 @@ form dl dd textarea {
   form dl dd {
     width: 65%;
   }
-  .thank-p{
+  .check-box dd {
+    margin-top: 0;
+  }
+  .thank-p {
     text-align: center;
     margin-top: 0;
   }
 }
+
 /* --------------------------------------------------
   幅767px以下のスタイル指定 ここから
 -------------------------------------------------- */
 
 @media screen and (max-width: 767px) {
-  .sm-none{
+  .sm-none {
     display: none;
   }
 }

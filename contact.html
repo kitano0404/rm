@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 </head>
 
 <body id="contact">
@@ -89,46 +90,66 @@
                 </div>
                 <p class="uketukejikan-center">9:00〜17:00（土・日・祝日は除く）</p>
                 <div class="form-box">
-                    <form
-                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScpjArtDXZo2u4Bj3iBkXw62VctVpd_6J4sJc0V-yFZ5fPcPA/formResponse"
-                        method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                    <form class="formrun" action="https://form.run/api/v1/r/wap6i30ty6b88w9n0k62cya1" method="post">
                         <dl>
                             <dt><label for="company-name">会社名
                                 </label></dt>
-                            <dd><input type="text" name="entry.1335806145" id="company-name" class="contact-form"
-                                    placeholder="会社名"></dd>
+                            <dd><input type="text" name="会社名" id="company-name" class="contact-form" placeholder="会社名">
+                            </dd>
                         </dl>
                         <dl>
                             <dt><label for="name">お名前
                                     <span class="must">必須</span>
                                 </label></dt>
-                            <dd><input type="text" name="entry.658077331" id="name" class="contact-form"
-                                    placeholder="お名前" required></dd>
+                            <dd><input type="text" name="お名前" id="name" class="contact-form" placeholder="お名前" required>
+                            </dd>
                         </dl>
                         <dl>
                             <dt><label for="email">メールアドレス
                                     <span class="must">必須</span>
                                 </label></dt>
-                            <dd><input type="mail" name="entry.977354256" id="email" class="contact-form"
-                                    placeholder="メールアドレス" required></dd>
+                            <dd><input type="mail" name="メールアドレス" id="email" class="contact-form" placeholder="メールアドレス"
+                                    required></dd>
                         </dl>
                         <dl>
                             <dt><label for="tel">電話番号
                                     <span class="must">必須</span>
                                 </label></dt>
-                            <dd><input type="number" name="entry.1119711199" id="tel" class="contact-form"
-                                    placeholder="電話番号" required></dd>
+                            <dd><input type="number" name="電話番号" id="tel" class="contact-form" placeholder="電話番号"
+                                    required>
+                                <span>※半角数字・ハイフンなしで入力してください。</span></dd>
                         </dl>
                         <dl>
                             <dt><label for="comment">問い合わせ内容</label>
                                 <span class="must">必須</span></dt>
-                            <dd><textarea id="comment" name="entry.867778367" rows="10" required></textarea></dd>
+                            <dd><textarea id="comment" name="問い合わせ内容" rows="10" required></textarea></dd>
                         </dl>
-                        <button class="confirmation-btn">送信する</button>
+                        <!--
+                        <dl class="check-box">
+                            <dt><label>個人情報利用同意</label>
+                                <span class="must">必須</span></dt>
+                            <dd><input class="checkbox" type="checkbox" name="個人情報利用同意" data-formrun-required>
+                                同意する。
+                            </dd>
+                        </dl>
+                        -->
+
+                        <!-- ボット投稿をブロックするためのタグ -->
+                        <div class="_formrun_gotcha">
+                            <style media="screen">
+                                ._formrun_gotcha {
+                                    position: absolute !important;
+                                    height: 1px;
+                                    width: 1px;
+                                    overflow: hidden;
+                                }
+                            </style>
+                            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                        </div>
+                        <button class="confirmation-btn" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
                     </form>
-                    <script type="text/javascript">var submitted = false;</script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                        onload="if(submitted){window.location='https://test-kitano.grow-up-webmarketing.co.jp/rm3/thank.html';}"></iframe>
+
                 </div>
             </div>
         </section>
