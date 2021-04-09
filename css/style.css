@@ -259,7 +259,7 @@ address {
 }
 
 .card {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .card a, .btn-w170 {
@@ -334,6 +334,10 @@ address {
 
 .mt-30 {
   margin-top: 30px;
+}
+
+.business-p .mt-20{
+  margin-top: -30px;
 }
 
 .coupon {
@@ -655,6 +659,7 @@ form dl dd textarea {
   font-size: 18px;
   padding: 10px;
   width: 100%;
+  font-weight: normal;
 }
 
 .check-box dd {
@@ -762,13 +767,22 @@ input[type=checkbox] {
   .news-date {
     display: inline-block;
   }
+  .business-card02 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -70px;
+  }
+  .business-card02 .card {
+    margin-right: 50px;
+  }
+  .business-card02 .card:last-child {
+    margin-right: 0;
+  }
   .business-card03 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: -70px;
   }
-  .business-card03 .card {
+  .business-card03 .card, .business-card02 .card {
     width: 300px;
     margin-top: 0;
     margin-bottom: 70px;

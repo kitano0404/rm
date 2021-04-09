@@ -144,7 +144,10 @@ header {
         display: block;
         padding: 0;
     }
-    #menu-ul li ul li a, #menu-ul li ul li ul li a {
+    #menu-ul li ul li a{
+        padding: 0 35px 0 20px;
+    }
+    #menu-ul li ul li ul li a {
         padding: 0 20px;
     }
     #menu-ul li ul li a:hover, #menu-ul>li:hover li:hover>a {
