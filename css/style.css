@@ -15,7 +15,7 @@ img {
 p {
   font-size: 16px;
   padding: 0 5vw;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 main {
@@ -129,11 +129,11 @@ h5 {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 30vh;
+  height: 35vh;
   position: relative;
   background-color: rgba(0, 0, 0, .3);
   background-size: cover;
-  background-position: center;
+  
   background-blend-mode: multiply;
 }
 
@@ -147,30 +147,31 @@ h5 {
 
 #home .top-img {
   background-color: rgba(0, 0, 0, 0);
-  background-image: url(../img/top-index.jpg);
-  background-position: left center;
+  background-image: url(../img/topimg-sm.jpg);
+  background-position: top center; 
+  height: 55vh;
 }
 
 #home .top-img h2 {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
-  padding: 0 10vw;
+  padding: 0 7vw;
 }
 
-#consulting .top-img, #financing .top-img, #subsidy .top-img, #environmental-infrastructure .top-img, #advertising-agency .top-img, #removing-bacteria .top-img {
-  background-image: url(../img/top-bisiness.jpg);
+#decontamination .top-img, #antivirus-goods .top-img, #photocatalytic-coating .top-img, #web-advertising .top-img, #qr-meishi .top-img, #sim-sale .top-img, #infrastructure .top-img {
+  background-image: url(../img/business-img.jpg);
 }
 
 #top-message .top-img {
-  background-image: url(../img/top-topmessage.jpg);
+  background-image: url(../img/top-message-img.jpg);
 }
 
 #information .top-img {
-  background-image: url(../img/top-information.jpg);
+  background-image: url(../img/information-img.jpg);
 }
 
 #contact .top-img {
-  background-image: url(../img/top-contact.jpg);
+  background-image: url(../img/contact-img.jpg);
 }
 
 /*--- フッター ---*/
@@ -267,15 +268,18 @@ address {
 }
 
 .about-us {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .65);
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
   background-image: url(../img/about-sm.jpg);
 }
 
-.about-us h4, .about-us p {
+.about-us h4, .about-p p{
   color: #fff;
+}
+.about-p {
+  margin-bottom: 70px;
 }
 
 .uketukejikan {
@@ -336,15 +340,11 @@ address {
   margin-top: 30px;
 }
 
-.business-p .mt-20{
-  margin-top: -30px;
-}
 
 .coupon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -30px;
 }
 
 .coupon dt {
@@ -750,13 +750,15 @@ input[type=checkbox] {
   }
   /*--- トップイメージ ---*/
   .top-img {
-    height: 50vh;
+    height: 60vh;
+    
   }
   #home .top-img {
     height: 80vh;
+    background-image: url(../img/topimg-pc.jpg);
   }
   #home .top-img h2 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
   }
   /*--- 以下、各ページのデザイン ---*/
@@ -791,7 +793,7 @@ input[type=checkbox] {
     background-image: url(../img/about-pc.jpg);
   }
   .about-p {
-    margin: 0 200px 50px;
+    margin: 0 250px 50px;
   }
   .contact-item {
     display: flex;
@@ -830,7 +832,7 @@ input[type=checkbox] {
     display: flex;
     justify-content: center;
   }
-  ..mt-30 {
+  .mt-30 {
     margin-top: 70px;
   }
   .nayami-box, .jitsurei-box {
@@ -864,6 +866,9 @@ input[type=checkbox] {
     margin: 0 auto;
     width: 700px;
     padding: 0;
+  }
+  .topmessage-p p{
+    margin-bottom: 30px;
   }
   .gaiyou-dl {
     width: 980px;
